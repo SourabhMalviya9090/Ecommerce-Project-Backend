@@ -273,8 +273,8 @@ app.post("/create-checkout-session", async (req, res) => {
         payment_method_types: ["card"],
         line_items: lineItems,
         mode: 'payment',
-        success_url: "http://localhost:3000/YourOrders",
-        cancel_url: "http://localhost:3000/cart"
+        success_url: "https://ecommerce-project-frontend-ecru.vercel.app/YourOrders",
+        cancel_url: "https://ecommerce-project-frontend-ecru.vercel.app/cart"
     }, { apiKey: SECRET_STRIPE_KEY });
 
     res.json({
